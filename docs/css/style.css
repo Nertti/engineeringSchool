@@ -1,0 +1,356 @@
+@charset "UTF-8";
+
+/*Обнуление*/
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+menu,
+section {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+::-webkit-scrollbar {
+  /* 1 - скроллбар */
+  width: 8px;
+  height: 8px;
+  background-color: #000;
+}
+
+::-webkit-scrollbar-button {
+  /* 2 - кнопка */
+}
+
+::-webkit-scrollbar-track {
+  /* 3 - трек */
+}
+
+::-webkit-scrollbar-track-piece {
+  /* 4 - видимая часть трека */
+}
+
+::-webkit-scrollbar-thumb {
+  /* 5 - ползунок */
+  border-radius: 4px;
+  background-color: yellow;
+}
+
+::-webkit-scrollbar-corner {
+  /* 6 - уголок */
+}
+
+::-webkit-resizer {
+  /* 7 - изменение размеров */
+}
+
+.wrapper {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  background-color: #000;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  color: #fff;
+}
+
+main {
+  padding: 70px 0 0;
+  font-style: italic;
+}
+
+.button {
+  width: 200px;
+  font-size: 20px;
+  line-height: 50px;
+  font-weight: 700;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 7px;
+  color: #000;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.nav {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.nav:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: darkseagreen;
+  z-index: 3;
+}
+
+.nav .nav__head {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav .nav__head .nav__logo {
+  position: relative;
+  z-index: 3;
+  cursor: pointer;
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.nav .nav__head .nav__logo span {
+  color: green;
+}
+
+.nav .nav__head .nav__burger {
+  display: none;
+}
+
+.nav .nav__head .nav__menu {
+  max-width: 600px;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav .nav__head .nav__menu.active {
+  top: 0;
+}
+
+.nav .nav__head .nav__menu .nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+.nav .nav__head .nav__menu .nav__list li {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.nav .nav__head .nav__menu .nav__list li:hover {
+  color: green;
+}
+
+@media screen and (max-width: 1220px) {
+  .container {
+    max-width: calc(100% - 60px);
+  }
+}
+
+@media screen and (max-width: 1077px) {
+  .wrapper {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .nav .nav__head .nav__burger {
+    display: block;
+    position: relative;
+    top: 0;
+    z-index: 3;
+    width: 35px;
+    height: 23px;
+  }
+
+  .nav .nav__head .nav__burger:before,
+  .nav .nav__head .nav__burger:after,
+  .nav .nav__head .nav__burger span {
+    content: "";
+    background-color: green;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    border-radius: 10px;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+  }
+
+  .nav .nav__head .nav__burger:before {
+    top: 0;
+  }
+
+  .nav .nav__head .nav__burger:after {
+    bottom: 0;
+  }
+
+  .nav .nav__head .nav__burger span {
+    top: 10px;
+  }
+
+  .nav .nav__head .active:before {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: 10px;
+  }
+
+  .nav .nav__head .active:after {
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    bottom: 10px;
+  }
+
+  .nav .nav__head .active span {
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+  }
+
+  .nav .nav__head .nav__menu {
+    display: block;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    max-width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #81bd81;
+    padding: 80px 0 0;
+    z-index: 2;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+  }
+
+  .nav .nav__head .nav__menu .nav__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 30px 0;
+    text-align: center;
+  }
+
+  .nav .nav__head .nav__menu .nav__list li {
+    margin: 10px 0;
+    font-size: 22px;
+  }
+}

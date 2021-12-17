@@ -11,26 +11,48 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: darkseagreen;
+    background-color: #e5e4e4;
     z-index: 3;
   }
   .nav__head{
     position: relative;
     //z-index: 2;
     display: flex;
-    padding: 20px 0;
+    //padding: 10px 0;
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    height: 100px;
+    @include mobile-XL{
+      height: 80px;
+    }
+    .logo{
+      z-index: 3;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .mgt{
+      z-index: 3;
+      padding-right: 15px;
+      @include mobile-XL{
+       display: none;
+      }
+    }
     .nav__logo{
+      @include tablet-S{
+        font-size: 22px;
+      }
+
       position: relative;
       z-index: 3;
       cursor: pointer;
       font-size: 28px;
       font-weight: 900;
       letter-spacing: 2px;
+      color: #557b32;
       span{
-        color: green;
+        color: #557b32;
       }
     }
     .nav__burger{
@@ -44,7 +66,7 @@
         height: 23px;
         &:before,&:after,span{
           content: '';
-          background-color: green;
+          background-color: #557b32;
           position: absolute;
           width: 100%;
           height: 3px;
@@ -83,14 +105,15 @@
     }
     .nav__menu{
       @include tablet{
-        display: block;
+        display: flex;
+        align-items: center;
         position: fixed;
         top: -100%;
         left: 0;
         max-width: 100%;
         height: 100%;
         overflow: auto;
-        background-color: #81bd81;
+        background-color: #f0f0f0;
         padding: 80px 0 0;
         z-index: 2;
         transition: all 0.4s ease 0s;
@@ -98,7 +121,10 @@
       &.active{
         top: 0;
       }
-      max-width: 600px;
+      @include laptop-S{
+        max-width: 400px;
+      }
+      max-width: 470px;
       width: 100%;
       position: relative;
       z-index: 3;
@@ -108,6 +134,7 @@
         display: flex;
         justify-content: space-around;
         width: 100%;
+        align-items: center;
         @include tablet{
           flex-direction: column;
           padding: 30px 0;
@@ -120,10 +147,11 @@
           }
           cursor: pointer;
           font-size: 18px;
-          font-weight: 500;
+          font-weight: 600;
           transition: all 0.5s ease 0s;
+          color: #4c4c4c;
           &:hover{
-            color: green;
+            color: #557b32;
           }
         }
       }

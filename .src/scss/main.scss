@@ -1,0 +1,45 @@
+.enrollment{
+  padding: 10px 0;
+  .enrollment__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .enrollment__txt{
+      max-width: 550px;
+      width: 100%;
+      .enrollment_title{
+        padding: 0 0 20px;
+      }
+    }
+  }
+}
+.directions{
+  padding: 20px 0;
+  .direction_row{
+    border-radius: 35px;
+    background-color: rgba(85, 123, 50, 0.35);
+    padding: 20px 40px;
+    .directions__txt{
+      font-weight: 600;
+      font-size: 30px;
+    }
+    .directions__row{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 0 0;
+      .direction{
+        display: flex;
+        align-items: flex-end;
+        .dir_img{
+          width: 30px;
+          color: white;
+          padding: 0 5px 0 0;
+          img{
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

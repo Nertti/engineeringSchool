@@ -15,7 +15,7 @@
 }
 
 .container{
-  max-width: 1400px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   color: #fff;
@@ -25,7 +25,7 @@
 }
 
 main{
-  padding: 80px 0 0;
+  padding: 100px 0 0;
   font-style: italic;
 }
 
@@ -40,6 +40,11 @@ main{
   color: #f0f0f0;
   cursor: pointer;
   text-transform: uppercase;
+}
+.title{
+  font-size: 40px;
+  color: #4c4c4c;
+  font-weight: 500;
 }
 @import "header.scss";
 @import "main.scss";

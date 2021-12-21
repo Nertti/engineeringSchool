@@ -11,19 +11,19 @@
 }
 
 @mixin mobile-L {
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 450px) {
     @content;
   }
 }
 
 @mixin mobile-XL {
-  @media screen and (max-width: 460px) {
+  @media screen and (max-width: 520px) {
     @content;
   }
 }
 
 @mixin tablet-S {
-  @media screen and (max-width: 540px) {
+  @media screen and (max-width: 620px) {
     @content;
   }
 }

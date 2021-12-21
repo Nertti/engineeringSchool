@@ -4,11 +4,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include laptop-S{
+      flex-direction: column-reverse;
+    }
     .enrollment__txt{
       max-width: 550px;
       width: 100%;
+      @include laptop-S{
+        padding: 20px 0 0;
+      }
       .enrollment_title{
         padding: 0 0 20px;
+      }
+    }
+    .enrollment__img{
+      img{
+        width: 100%;
+        max-width: 550px;
       }
     }
   }
@@ -19,25 +31,47 @@
     border-radius: 35px;
     background-color: rgba(85, 123, 50, 0.35);
     padding: 20px 40px;
+    @include laptop{
+      max-width: 700px;
+      width: 100%;
+      padding: 20px 50px;
+      margin: 0 auto;
+    }
+    @include tablet-S{
+      max-width: 450px;
+    }
+    @include mobile-L{
+      padding: 20px;
+    }
     .directions__txt{
       font-weight: 600;
       font-size: 30px;
     }
     .directions__row{
+
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 20px 0 0;
+      flex-wrap: wrap;
       .direction{
+        padding: 10px 0;
         display: flex;
-        align-items: flex-end;
+        align-items: center;
         .dir_img{
-          width: 30px;
+          //width: 50px;
           color: white;
-          padding: 0 5px 0 0;
+          //padding: 0 5px 0 0;
           img{
+            padding: 0 5px 0 0;
+            width: 50px;
             color: white;
           }
+        }
+        .dir_txt{
+          font-size: 23px;
+          color: #4c4c4c;
+          font-weight: 500;
         }
       }
     }

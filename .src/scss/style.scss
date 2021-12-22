@@ -22,6 +22,9 @@
   @include laptop-M{
     max-width: calc(100% - 60px);
   }
+  @include mobile-M{
+    max-width: calc(100% - 40px);
+  }
 }
 
 main{

@@ -133,7 +133,7 @@
       align-items: center;
       .nav__list{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         width: 100%;
         align-items: center;
         @include tablet{

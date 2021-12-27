@@ -98,3 +98,40 @@
     }
   }
 }
+.tasks{
+  .column__title{
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .tasks__columns{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    @include laptop-S{
+      flex-direction: column;
+      align-items: center;
+    }
+    .column{
+      max-width: 280px;
+      width: 100%;
+      //border: 0.5px solid rgba(76, 76, 76, 0.4);
+      border-radius: 10px;
+      padding: 20px;
+      background: url("../img/line.png") left center;
+      //height: 350px;
+        margin: 30px 0;
+        box-shadow: 0 2px 5px rgba(76, 76, 76, 0.4);
+      .name_card{
+        font-size: 50px;
+        font-weight: 600;
+        padding: 40px 0;
+        text-align: center;
+      }
+      .txt_card{
+        font-weight: 500;
+
+      }
+    }
+  }
+}

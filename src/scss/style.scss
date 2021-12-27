@@ -9,6 +9,7 @@
   overflow: hidden;
   background-color: #f0f0f0;
   font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
   @include laptop{
     user-select: none;
   }
@@ -18,7 +19,7 @@
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  color: #fff;
+  color: #4c4c4c;
   @include laptop-M{
     max-width: calc(100% - 60px);
   }

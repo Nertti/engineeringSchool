@@ -3,5 +3,3 @@ import * as burg from './modules/burger.js';
 
 flsFunctions.isWebp();
 burg.burger();
-
-

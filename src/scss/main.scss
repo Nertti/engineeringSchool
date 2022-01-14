@@ -1,136 +1,186 @@
-.enrollment{
-  padding: 10px 0;
-  .enrollment__row{
+.img_first{
+  width: 100%;
+  position: relative;
+  img{
+    width: 100%;
+  }
+  .txt_img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color: #f0f0f0;
+    font-size: 55px;
+    font-weight: 800;
+    width: 800px;
+    line-height: 70px;
+    text-align: center;
+  }
+}
+.for_new{
+  display: flex;
+  width: 100%;
+  @include laptop-S{
+    flex-wrap: wrap;
+  }
+  .task{
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    width: 100%;
+    &.blue{
+      background-color: #9f5cdc;
+    }
+    &.red{
+      background-color: #c75454;
+    }
+    &.green{
+      background-color: #67ba30;
+    }
+    &.yellow{
+      background-color: #d5b82a;
+    }
+    .logo{
+      position: relative;
+      top: -70px;
+      background: #ffffff;
+      border-radius: 50%;
+      border: 1px solid #dbdbdb;
+      width: 100px;
+      height: 100px;
+      margin: 0 auto;
+      img{
+        margin: 20px;
+        width: 60px;
+      }
+    }
+    .txt{
+      position: relative;
+      top: -30px;
+      color: #f0f0f0;
+      .title{
+        color: #f0f0f0;
+        text-align: center;
+        padding: 0 0 20px;
+      }
+    }
+  }
+}
+
+.about_as{
+  display: flex;
+  justify-content: space-between;
+  @include tablet{
+    flex-direction: column-reverse;
+  }
+  .we{
+    max-width: 800px;
+    width: 100%;
+    padding-right: 20px;
+    .head_we{
+      padding: 20px 0;
+      .title{
+        padding: 20px 0;
+        font-weight: 700;
+        font-size: 35px;
+      }
+      .description{
+
+      }
+    }
+    .body_we{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      @include laptop{
+        flex-direction: column;
+      }
+      .column{
+        width: 100%;
+        .column_line{
+          display: flex;
+          align-items: flex-start;
+          width: 100%;
+          .logo_col{
+            border-radius: 50%;
+            background-color: #9f5cdc;
+            img{
+              width: 40px;
+              margin: 15px;
+            }
+          }
+          .txt_line{
+            padding: 10px 10px 30px;
+            .title{
+              font-size: 25px;
+              padding: 0 0 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .welcome{
+    max-width: 400px;
+    width: 100%;
+    padding: 20px 0;
+    @include tablet{
+      max-width: 100%;
+    }
+    .title{
+      padding: 20px 0;
+    }
+    .button{
+      margin: 20px 0;
+    }
+  }
+}
+.head_block{
+  padding: 50px 0;
+  .title{
+    font-weight: 700;
+    text-align: center;
+  }
+  .description{
+    text-align: center;
+
+  }
+}
+.our{
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  @include laptop-M{
+    flex-direction: column;
+  }
+  .lesson{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    @include laptop-S{
-      flex-direction: column-reverse;
-    }
-    .enrollment__txt{
-      max-width: 550px;
-      width: 100%;
-      @include laptop-S{
-        padding: 20px 0 0;
-      }
-      .enrollment_title{
-        padding: 0 0 20px;
-        @include mobile-L{
-          font-size: 30px;
-        }
-      }
-    }
-    .enrollment__img{
-      img{
-        width: 100%;
-        max-width: 550px;
-      }
-    }
-  }
-}
-.directions{
-  padding: 30px 0;
-  .direction_row{
-    border-radius: 35px;
-    background-color: rgba(85, 123, 50, 0.3);
-    padding: 40px;
-    @include laptop{
-      max-width: 700px;
-      width: 100%;
-      padding: 20px 50px;
-      margin: 0 auto;
-    }
-    @include laptop-S{
-      max-width: 570px;
-    }
-    @include tablet-S{
-      max-width: 450px;
-    }
-    @include mobile-L{
-      padding: 20px;
-    }
-    .directions__txt{
-      font-weight: 600;
-      font-size: 30px;
-      width: 100%;
-      max-width: 950px;
-      margin: 0 auto;
-      @include mobile-L{
-        font-size: 26px;
-      }
-    }
-    .directions__row{
-
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 20px 0 0;
-      flex-wrap: wrap;
-      width: 100%;
-      max-width: 950px;
-      margin: 0 auto;
-      .direction{
-        padding: 10px 0;
-        display: flex;
-        align-items: center;
-        .dir_img{
-          //width: 50px;
-          color: white;
-          //padding: 0 5px 0 0;
-          img{
-            padding: 0 5px 0 0;
-            width: 50px;
-            color: white;
-          }
-        }
-        .dir_txt{
-          font-size: 23px;
-          color: #4c4c4c;
-          font-weight: 500;
-          @include mobile-L{
-            font-size: 20px;
-          }
-          @include mobile-M{
-            font-size: 18px;
-          }
-        }
-      }
-    }
-  }
-}
-.tasks{
-  .column__title{
-    text-align: center;
-    font-style: normal;
-    font-weight: 700;
-  }
-  .tasks__columns{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
-    @include laptop-S{
+    max-width: 580px;
+    padding: 20px 10px;
+    width: 100%;
+    @include laptop-M{
       flex-direction: column;
       align-items: center;
     }
-    .column{
-      max-width: 280px;
-      width: 100%;
-      //border: 0.5px solid rgba(76, 76, 76, 0.4);
-      border-radius: 10px;
-      padding: 20px;
-      background: url("../img/line.png") left center;
-      //height: 350px;
-        margin: 30px 0;
-        box-shadow: 0 2px 5px rgba(76, 76, 76, 0.4);
-      .name_card{
-        font-size: 50px;
-        font-weight: 600;
-        padding: 40px 0;
+    .title{
+      font-weight: 500;
+      font-size: 30px;
+      @include laptop-M{
         text-align: center;
+        font-size: 35px;
       }
-      .txt_card{
-        font-weight: 500;
-
+    }
+    .description{
+      max-width: 330px;
+      width: 100%;
+      @include laptop-M{
+        max-width: 100%;
       }
     }
   }

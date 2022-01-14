@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title": "Главная"
+})
+<body>
+<div class="wrapper">
+    @@include('html/header.html')
+    <main class="main">
+
+        <div class="container">
+            <div class="block">
+                <div class="title_form">
+                    Авторизация
+                </div>
+                <div class="form">
+                    <form action="">
+                        <label>
+                            Email:
+                            <input type="email" name="email">
+                        </label>
+                        <br>
+                        <label>
+                            Пароль:
+                            <input type="password" name="pass">
+                        </label>
+                        <div class="button">
+                            Войти
+                        </div>
+                        <div onclick="location.href='log.html'" class="register">
+                            Зарегистрироваться
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    @@include('html/footer.html')
+    <script src="js/app.min.js"></script>
+</div>
+</body>
+</html>

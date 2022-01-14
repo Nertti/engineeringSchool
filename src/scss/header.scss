@@ -4,6 +4,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  box-shadow: 0 0 20px rgba(76, 76, 76, 0.6);
   &:before{
     content: '';
     position: absolute;
@@ -11,7 +12,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #e5e4e4;
+    background-color: #ffffff;
     z-index: 3;
   }
   .nav__head{
@@ -22,9 +23,9 @@
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: 60px;
     @include mobile-XL{
-      height: 80px;
+      height: 60px;
     }
     .logo{
       z-index: 3;
@@ -41,19 +42,19 @@
     }
     .nav__logo{
       @include tablet-S{
-        font-size: 22px;
+        font-size: 20px;
       }
 
       position: relative;
       z-index: 3;
       cursor: pointer;
-      font-size: 28px;
+      font-size: 22px;
       font-weight: 900;
       letter-spacing: 2px;
-      color: #557b32;
+      color: #4c4c4c;
       span{
         font-weight: 900;
-        color: #557b32;
+        color: #4c4c4c;
       }
     }
     .nav__burger{
@@ -67,7 +68,7 @@
         height: 23px;
         &:before,&:after,span{
           content: '';
-          background-color: #557b32;
+          background-color: #4c4c4c;
           position: absolute;
           width: 100%;
           height: 3px;
@@ -115,7 +116,7 @@
         height: 100%;
         overflow: auto;
         background-color: #f0f0f0;
-        padding: 80px 0 0;
+        //padding: 80px 0 0;
         z-index: 2;
         transition: all 0.4s ease 0s;
       }
@@ -125,7 +126,8 @@
       @include laptop-S{
         max-width: 400px;
       }
-      max-width: 470px;
+      //max-width: 470px;
+      max-width: 500px;
       width: 100%;
       position: relative;
       z-index: 3;
@@ -144,7 +146,7 @@
         li{
           @include tablet{
             margin: 10px 0;
-            font-size: 22px;
+            font-size: 20px;
           }
           cursor: pointer;
           font-size: 18px;
@@ -152,7 +154,7 @@
           transition: all 0.5s ease 0s;
           color: #4c4c4c;
           &:hover{
-            color: #557b32;
+            color: #9f5cdc;
           }
         }
       }

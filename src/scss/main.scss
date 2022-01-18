@@ -1,8 +1,19 @@
 .img_first{
-  width: 100%;
   position: relative;
-  img{
-    width: 100%;
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  .cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    opacity: .3;
+    background: #4c4c4c;
   }
   .txt_img{
     position: absolute;
@@ -13,9 +24,14 @@
     color: #f0f0f0;
     font-size: 55px;
     font-weight: 800;
-    width: 800px;
+    max-width: 800px;
+    width: 100%;
     line-height: 70px;
     text-align: center;
+    @include tablet{
+      font-size: 40px;
+      max-width: 600px;
+    }
   }
 }
 .for_new{
@@ -31,16 +47,19 @@
     font-style: normal;
     width: 100%;
     &.blue{
-      background-color: #9f5cdc;
+      //background-color: #9f5cdc;
+      background-color: #9966CB;
     }
     &.red{
       background-color: #c75454;
     }
     &.green{
-      background-color: #67ba30;
+      //background-color: #67ba30;
+      background-color: #339967;
     }
     &.yellow{
-      background-color: #d5b82a;
+      //background-color: #d5b82a;
+      background-color: #d9b91b;
     }
     .logo{
       position: relative;
@@ -106,7 +125,7 @@
           width: 100%;
           .logo_col{
             border-radius: 50%;
-            background-color: #1892de;
+            background-color: #618EE3;
             img{
               width: 40px;
               margin: 15px;

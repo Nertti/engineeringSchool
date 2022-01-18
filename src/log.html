@@ -13,7 +13,7 @@
                     Вход
                 </div>
                 <div class="form">
-                    <form action="">
+                    <form method="post" action="log.php">
                         <label>
                             Имя:
                             <input type="text" name="name">
@@ -27,17 +27,17 @@
                             <input type="tel" name="tel">
                         </label>
                         <label>
-                            Email:
-                            <input type="email" name="email">
+                            Пароль:
+                            <input type="email" name="pass">
                         </label>
                         <br>
                         <label>
-                            Пароль:
-                            <input type="password" name="pass">
+                            Повторите пароль:
+                            <input type="password" name="check_pass">
                         </label>
-                        <div class="button">
+                        <button type="submit" name="btn-log" class="button">
                             зарегать
-                        </div>
+                        </button>
                         <div onclick="location.href='sign.html'" class="register">
                             Войти
                         </div>

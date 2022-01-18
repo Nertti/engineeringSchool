@@ -3,11 +3,8 @@
         <div class="container">
             <div class="nav__head">
                 <div class="logo">
-<!--                    <div class="mgt">-->
-<!--                        <img src="img/logo.png" height="50"/>-->
-<!--                    </div>-->
                     <div onclick="location.href='index.html'" class="nav__logo">
-                        Инженерная<span> школа</span>
+                        Инженерная школа
                     </div>
                 </div>
                 <div class="nav__burger">
@@ -15,13 +12,21 @@
                 </div>
                 <div class="nav__menu">
                     <ul class="nav__list">
-                        <li onclick="location.href=''">Главная</li>
-                        <li onclick="location.href=''">О нас</li>
-                        <li onclick="location.href=''">Курсы</li>
-<!--                        <li onclick="location.href=''">Цены</li>-->
-<!--                        <li onclick="location.href=''">Блог</li>-->
-                        <li onclick="location.href=''">Контакты</li>
-                        <li onclick="location.href='sign.html'">Личный кабинет</li>
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="/">О нас</a></li>
+                        <li><a href="/">Курсы</a></li>
+                        <li><a href="/">Контакты</a></li>
+<!--                        <?php if (isset($_SESSION['id_user'])): ?>-->
+<!--                        <li>-->
+<!--                            <?php if ($_SESSION['admin']): ?>-->
+<!--                            <a href="administrator/admin.php">Администратор</a>-->
+<!--                            <?php else: ?>-->
+<!--                            <a href="">Личный кабинет</a>-->
+<!--                            <?php endif; ?>-->
+<!--                        </li>-->
+<!--                        <?php else: ?>-->
+                        <li><a href="/">Войти</a></li>
+<!--                        <?php endif; ?>-->
                     </ul>
                 </div>
             </div>

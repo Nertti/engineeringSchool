@@ -48,10 +48,10 @@ a{
   width: 200px;
   font-size: 20px;
   line-height: 50px;
-  font-weight: 700;
-  background-color: #4c4c4c;
+  font-weight: 600;
+  background-color: #e09447;
   text-align: center;
-  border-radius: 20px;
+  border-radius: 50px;
   color: #f0f0f0;
   cursor: pointer;
   text-transform: uppercase;
@@ -60,13 +60,19 @@ button{
   display: block;
 }
 .title{
-  font-size: 40px;
+  font-size: 35px;
   color: #4c4c4c;
-  font-weight: 500;
+  font-weight: 6600;
   line-height: 2.5rem;
 }
 .description{
   font-size: 16px;
+}
+.title_blue{
+  color: #5788e3;
+}
+.title_yellow{
+  color: #e09447;
 }
 @import "header.scss";
 @import "main.scss";

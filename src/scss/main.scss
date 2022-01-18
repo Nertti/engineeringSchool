@@ -1,11 +1,12 @@
-.img_first{
+.img_first {
   position: relative;
   width: 100%;
   height: 600px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  .cover{
+
+  .cover {
     position: absolute;
     top: 0;
     left: 0;
@@ -15,7 +16,8 @@
     opacity: .3;
     background: #4c4c4c;
   }
-  .txt_img{
+
+  .txt_img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -28,40 +30,48 @@
     width: 100%;
     line-height: 70px;
     text-align: center;
-    @include tablet{
+    @include tablet {
       font-size: 40px;
       max-width: 600px;
     }
   }
 }
-.for_new{
+
+.for_new {
   display: flex;
   width: 100%;
-  @include laptop-S{
+  @include laptop-S {
     flex-wrap: wrap;
   }
-  .task{
+
+  .task {
     padding: 20px;
     font-size: 18px;
     font-weight: 500;
     font-style: normal;
     width: 100%;
-    &.blue{
+
+    &.blue {
       //background-color: #9f5cdc;
       background-color: #9966CB;
     }
-    &.red{
+
+    &.red {
       background-color: #c75454;
+      //background-color: #e07247;
     }
-    &.green{
+
+    &.green {
       //background-color: #67ba30;
-      background-color: #339967;
+      background-color: #339967; //хороший
     }
-    &.yellow{
+
+    &.yellow {
       //background-color: #d5b82a;
       background-color: #d9b91b;
     }
-    .logo{
+
+    .logo {
       position: relative;
       top: -70px;
       background: #ffffff;
@@ -70,70 +80,89 @@
       width: 100px;
       height: 100px;
       margin: 0 auto;
-      img{
+
+      img {
         margin: 20px;
         width: 60px;
       }
     }
-    .txt{
+
+    .txt {
       position: relative;
       top: -30px;
       color: #f0f0f0;
-      .title{
+
+      .title {
         color: #f0f0f0;
         text-align: center;
         padding: 0 0 20px;
+      }
+
+      .description {
+        text-align: center;
+        padding: 0 10px;
       }
     }
   }
 }
 
-.about_as{
+.about_as {
   display: flex;
   justify-content: space-between;
-  @include tablet{
+  @include tablet {
     flex-direction: column-reverse;
   }
-  .we{
+
+  .we {
     max-width: 800px;
     width: 100%;
     padding-right: 20px;
-    .head_we{
+
+    .head_we {
       padding: 20px 0;
-      .title{
+
+      .title {
         padding: 20px 0;
         font-weight: 700;
         font-size: 35px;
       }
-      .description{
+
+      .description {
 
       }
     }
-    .body_we{
+
+    .body_we {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
 
-      @include laptop{
+      @include laptop {
         flex-direction: column;
       }
-      .column{
+
+      .column {
         width: 100%;
-        .column_line{
+
+        .column_line {
           display: flex;
           align-items: flex-start;
           width: 100%;
-          .logo_col{
+
+          .logo_col {
             border-radius: 50%;
             background-color: #618EE3;
-            img{
+
+            img {
               width: 40px;
               margin: 15px;
             }
           }
-          .txt_line{
+
+          .txt_line {
             padding: 0 10px 30px;
-            .title{
+
+            .title {
               font-size: 22px;
               padding: 0 0 5px;
             }
@@ -142,64 +171,81 @@
       }
     }
   }
-  .welcome{
+
+  .welcome {
     max-width: 400px;
     width: 100%;
     padding: 20px 0;
-    @include tablet{
+    @include tablet {
       max-width: 100%;
     }
-    .title{
+
+    .title {
       padding: 20px 0;
     }
-    .button{
+
+    .button {
       margin: 20px 0;
     }
   }
 }
-.head_block{
+
+.head_block {
   padding: 50px 0;
-  .title{
+
+  .title {
     font-weight: 700;
     text-align: center;
   }
-  .description{
+
+  .description {
     text-align: center;
 
   }
 }
-.our{
+
+.our {
   padding: 20px 0;
+  margin: 0 -10px 0 -10px;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  @include laptop-M{
+  align-items: flex-start;
+  @include tablet{
     flex-direction: column;
   }
-  .lesson{
+  .lesson {
     display: flex;
-    justify-content: space-between;
-    max-width: 580px;
-    padding: 20px 10px;
-    width: 100%;
-    @include laptop-M{
+    margin: 10px 0;
+    flex: 0 0 50%;
+    max-width: 50%;
+    @include laptop-M {
       flex-direction: column;
-      align-items: center;
+      justify-content: flex-start;
+      padding: 0 20px;
     }
-    .title{
-      font-weight: 500;
-      font-size: 30px;
-      @include laptop-M{
-        text-align: center;
-        font-size: 35px;
+    @include tablet{
+      max-width: 100%;
+    }
+    .img {
+      width: 250px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      @include laptop-M {
+        height: 300px;
+        width: 100%;
       }
     }
-    .description{
-      max-width: 330px;
-      width: 100%;
-      @include laptop-M{
-        max-width: 100%;
+
+    .txt_lesson {
+      padding: 20px;
+      width: calc(100% - 250px);
+      @include laptop-M {
+        width: 100%;
+      }
+      .title {
+        font-weight: 500;
+        font-size: 24px;
       }
     }
   }

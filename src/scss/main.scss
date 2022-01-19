@@ -5,9 +5,11 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  &.second{
+
+  &.second {
     height: 300px;
   }
+
   .cover {
     position: absolute;
     top: 0;
@@ -17,7 +19,8 @@
     content: '';
     opacity: .3;
     background: #4c4c4c;
-    &.second{
+
+    &.second {
       background: #f1453d;
     }
   }
@@ -39,16 +42,20 @@
       font-size: 40px;
       max-width: 600px;
     }
-    &.second{
+
+    &.second {
       font-size: 45px;
     }
-    &.path{
+
+    &.path {
       top: 70%;
       font-size: 20px;
       font-weight: 500;
-      a{
+
+      a {
         color: #f0f0f0;
-        &:hover{
+
+        &:hover {
           color: #e0e0e0;
         }
       }
@@ -145,7 +152,8 @@
         font-weight: 600;
         font-size: 35px;
       }
-      .description{
+
+      .description {
         padding-right: 10px;
       }
     }
@@ -230,9 +238,10 @@
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
-  @include tablet{
+  @include tablet {
     flex-direction: column;
   }
+
   .lesson {
     display: flex;
     margin: 10px 0;
@@ -243,9 +252,10 @@
       justify-content: flex-start;
       padding: 0 20px;
     }
-    @include tablet{
+    @include tablet {
       max-width: 100%;
     }
+
     .img {
       width: 250px;
       background-size: cover;
@@ -264,16 +274,57 @@
         padding: 20px 0;
         width: 100%;
       }
+
       .title {
         font-weight: 500;
         font-size: 24px;
         color: #5788e3;
       }
-      .time{
+
+      .time {
         color: #e09447;
         padding: 10px 0;
         font-weight: 500;
       }
     }
+  }
+}
+
+.contact_row {
+  display: flex;
+  @include laptop-S {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  @include tablet-S {
+    flex-direction: column;
+  }
+
+  .block_contact {
+    @include laptop-S {
+      width: 48%;
+      margin: 20px 0;
+    }
+    @include tablet-S {
+      width: 100%;
+    }
+    width: 25%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 10px;
+    padding: 20px;
+    background-color: rgb(248, 248, 248);
+  }
+}
+.map{
+  width: 100%;
+  height: 287px;
+  margin: 20px 0 50px;
+  iframe{
+    height: 100%;
+    width: 100%;
   }
 }

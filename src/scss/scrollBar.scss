@@ -1,7 +1,7 @@
 ::-webkit-scrollbar { /* 1 - скроллбар */
   width: 8px;
   height: 8px;
-  background-color: #4c4c4c;
+  background-color: #5788e3;
 }
 
 ::-webkit-scrollbar-button { /* 2 - кнопка */
@@ -15,8 +15,8 @@
 }
 
 ::-webkit-scrollbar-thumb { /* 5 - ползунок */
-  border-radius: 4px;
-  background-color: #557b32;
+  border-radius: 20px;
+  background-color: #e09447;
 }
 
 ::-webkit-scrollbar-corner { /* 6 - уголок */

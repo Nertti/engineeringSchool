@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <link rel="stylesheet" href="css/style.min.css?_v=20220218124905">
-    <title>Главная</title>
+    <title>Создать</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap&_v=20220218124905"
@@ -111,48 +111,53 @@
 
     <main class="main">
         <div class="container">
-            <div class="block">
-                <div class="title_form">
-                    Вход
+            <div class="admin_panel">
+                <div class="section-general">
+                    <ul>
+                        <li><a href="admin_courses.html">Курсы</a></li>
+                        <li><a href="admin.html">Пользователи</a></li>
+                    </ul>
                 </div>
-                <div class="form">
-                    <form method="post" action="log.php">
-                        <label>
-                            Имя:
-                            <input type="text" name="name">
-                        </label>
-                        <label>
-                            Фамилия:
-                            <input type="text" name="surname">
-                        </label>
-                        <label>
-                            Отчество:
-                            <input type="text" name="last_name">
-                        </label>
-                        <label>
-                            Логин:
-                            <input type="text" name="surname">
-                        </label>
-                        <label>
-                            Пароль:
-                            <input type="email" name="pass">
-                        </label>
-                        <br>
-                        <label>
-                            Повторите пароль:
-                            <input type="password" name="check_pass">
-                        </label>
-                        <button type="submit" name="btn-log" class="button">
-                            зарегать
-                        </button>
-                        <div onclick="location.href='sign.html'" class="register">
-                            Войти
+                <div class="section-second">
+                    <div class="nav_admin">
+                        <div class="add_user">
+                            <a>Создать</a>
                         </div>
-                    </form>
+                        <div class="edit_user">
+                            <a>Редактировать</a>
+                        </div>
+                        <div class="exit">
+                            <a>Выйти</a>
+                        </div>
+                    </div>
+                    <div class="table">
+                        <div class="title">
+                            Курсы
+                        </div>
+                        <div class="head_table row">
+                            <div class="id">ID</div>
+                            <div class="name">Название</div>
+                            <div class="price">Цена</div>
+                            <div class="control">Управление</div>
+                        </div>
+                        <div class="row_table row">
+                            <div class="id">1</div>
+                            <div class="name">Схемотехника</div>
+                            <div class="price">10</div>
+                            <div class="edit"><a>Изменить</a></div>
+                            <div class="delete"><a>Удалить</a></div>
+                        </div>
+                        <div class="row_table row">
+                            <div class="id">2</div>
+                            <div class="name">Программирование</div>
+                            <div class="price">12</div>
+                            <div class="edit"><a>Изменить</a></div>
+                            <div class="delete"><a>Удалить</a></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
     </main>
     <footer>
 

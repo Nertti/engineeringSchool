@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title": "Создать"
+})
+<body>
+<div class="wrapper">
+    @@include('html/header.html')
+    <main class="main">
+        <div class="container">
+            <div class="admin_panel">
+                <div class="section-general">
+                    <ul>
+                        <li><a href="admin_courses.html">Курсы</a></li>
+                        <li><a href="admin.html">Пользователи</a></li>
+                    </ul>
+                </div>
+                <div class="section-second">
+                    <div class="nav_admin">
+                        <div class="add_user">
+                            <a>Создать</a>
+                        </div>
+                        <div class="edit_user">
+                            <a>Редактировать</a>
+                        </div>
+                        <div class="exit">
+                            <a>Выйти</a>
+                        </div>
+                    </div>
+                    <div class="table">
+                        <div class="title">
+                            Курсы
+                        </div>
+                        <div class="head_table row">
+                            <div class="id">ID</div>
+                            <div class="name">Название</div>
+                            <div class="price">Цена</div>
+                            <div class="control">Управление</div>
+                        </div>
+                        <div class="row_table row">
+                            <div class="id">1</div>
+                            <div class="name">Схемотехника</div>
+                            <div class="price">10</div>
+                            <div class="edit"><a>Изменить</a></div>
+                            <div class="delete"><a>Удалить</a></div>
+                        </div>
+                        <div class="row_table row">
+                            <div class="id">2</div>
+                            <div class="name">Программирование</div>
+                            <div class="price">12</div>
+                            <div class="edit"><a>Изменить</a></div>
+                            <div class="delete"><a>Удалить</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    @@include('html/footer.html')
+    <script src="js/app.min.js"></script>
+</div>
+</body>
+</html>

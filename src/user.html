@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title": "Личный кабинет"
+})
+<body class="body">
+<div class="wrapper">
+    @@include('html/header.html')
+    <main class="main">
+        <div style="background-image: url('img/bg_2.jpg');" class="img_first second">
+            <div class="cover second"></div>
+            <div class="container">
+                <div class="txt_img second">
+                    Личный кабинет
+                </div>
+                <div class="txt_img path">
+                    <a href="index.html">Главная</a> &#8250; <a href="#">Личный кабинет</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="user">
+                <div style="background-image: url('img/default.png')" class="user_photo">
+
+                </div>
+                <div class="user_info">
+                    <div class="user_fio title">
+                        <div class="user_name">
+                            <span>Александр</span><span> </span><span>Котляренко</span>
+                        </div>
+                        <div class="user_settings">
+                            <img src="img/settings.svg">
+                            <div class="setting description "><a class="popup-link" href="#popup">Изменить профиль</a></div>
+                        </div>
+                    </div>
+                    <div class="user_full_info">
+                        <div class="user_statistic duo">
+                            <div class="user_block">
+                                <div>
+                                    Телефон:
+                                </div>
+                                <div>
+                                    <div>+375445753201</div>
+                                </div>
+                            </div>
+                            <div class="user_block">
+                                <div>
+                                    Курсы:
+                                </div>
+                                <div class="name_courses">
+                                    <div>Программирование</div>
+                                    <div>Математика</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user_statistic byn">
+                            <div class="user_block">
+                                <div class="balance">
+                                    Баланс:
+                                </div>
+                                <div class="price">
+                                    0 BYN
+                                </div>
+                            </div>
+                            <div class="user_logout">
+                                <img src="img/exit.svg"><a href="#">Выход</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="title">Расписание</div>
+            <div class="user_dashboard">
+
+            </div>
+        </div>
+    </main>
+    @@include('html/footer.html')
+    <div id="popup" class="popup">
+        <div class="popup_body">
+            <div class="popup_content">
+                <a href="#" class="popup_close">X</a>
+                <div>Некое наполнение пока хз</div>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.min.js"></script>
+</div>
+</body>
+</html>

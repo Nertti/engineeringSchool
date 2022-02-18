@@ -3,19 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20220119161914">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220218123546">
     <title>Главная</title>
-    <link rel="stylesheet" href="css/style.min.css?_v=20220119161914">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap&_v=20220119161914"
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap&_v=20220218123546"
           rel="stylesheet">
 
 </head>
 <body>
 <div class="wrapper">
     <header>
-    <div class="nav">
+    <div class="nav lock-padding">
         <div class="container">
             <div class="nav__head">
                 <div class="logo">
@@ -41,7 +40,7 @@
 <!--                            <?php endif; ?>-->
 <!--                        </li>-->
 <!--                        <?php else: ?>-->
-                        <li><a href="/">Войти</a></li>
+                        <li><a class="popup-link" href="#popup_log">Войти</a></li>
 <!--                        <?php endif; ?>-->
                     </ul>
                 </div>
@@ -49,6 +48,67 @@
         </div>
     </div>
 </header>
+<div id="popup_log" class="popup">
+    <div class="popup_body">
+        <div class="popup_content" style="background-image: url('img/back_log.png')">
+            <a href="#" class="popup_close"></a>
+            <div class="log">
+                <div class="block">
+                    <div class="form">
+                        <form action="">
+                            <label>
+                                Логин:
+                                <input type="text" name="log">
+                            </label>
+                            <br>
+                            <label>
+                                Пароль:
+                                <input type="password" name="pass">
+                            </label>
+                            <div class="button">
+                                Войти
+                            </div>
+                            <div onclick="location.href='log.html'" class="register">
+                                Зарегистрироваться
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="popup_reg" class="popup">
+    <div class="popup_body">
+        <div class="popup_content" style="background-image: url('img/back_log.png')">
+            <a href="#" class="popup_close"></a>
+            <div class="log">
+                <div class="block">
+                    <div class="form">
+                        <form action="">
+                            <label>
+                                Логин:
+                                <input type="text" name="log">
+                            </label>
+                            <br>
+                            <label>
+                                Пароль:
+                                <input type="password" name="pass">
+                            </label>
+                            <div class="button">
+                                Войти
+                            </div>
+                            <div onclick="location.href='log.html'" class="register">
+                                Зарегистрироваться
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
     <main class="main">
         <div style="background-image: url('img/bg_1.jpg');" class="img_first">
             <div class="cover"></div>
@@ -287,33 +347,44 @@
     <footer>
 
 <div class="container">
-    <div class="foot_row">
-<!--        <div class="question">-->
-<!--            <div class="title">-->
-<!--                Есть вопросы?-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="links">-->
-<!--            <div class="title">-->
-<!--                Ссылки-->
-<!--            </div>-->
-<!--            <ul class="list">-->
-<!--                <li onclick="location.href=''">Главная</li>-->
-<!--                <li onclick="location.href=''">О нас</li>-->
-<!--                <li onclick="location.href=''">Курсы</li>-->
-<!--                <li onclick="location.href=''">Контакты</li>-->
-<!--            </ul>-->
-<!--        </div>-->
-<!--        <div class="subscribe">-->
-<!--            <div class="title">-->
-<!--                Подписаться-->
-<!--            </div>-->
-<!--        </div>-->
+    <div class="footRow">
+        <div class="contact">
+            <div class="title_foot">
+                Связаться с нами:
+            </div>
+            <div class="contact_adres">
+                <a>г.Колодищи, ул.Тихая 20</a>
+            </div>
+            <div class="contact_tel">
+                <a>+375445753201</a>
+            </div>
+            <div class="contact_email">
+                <a>school.by</a>
+            </div>
+        </div>
+        <div class="links">
+            <div class="title_foot">Навигация:</div>
+            <ul class="">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="courses.html">Курсы</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="links course">
+            <div class="title_foot">Наши курсы:</div>
+            <ul class="">
+                <li><a href="index.html">Программирование</a></li>
+                <li><a href="about.html">Конструирование</a></li>
+                <li><a href="courses.html">Компьютерная графика</a></li>
+                <li><a href="contact.html">Схемотехника</a></li>
+            </ul>
+        </div>
     </div>
 </div>
-
+<!--    СОЗДАТЕЛЬ Nertti-->
 </footer>
-    <script src="js/app.min.js?_v=20220119161914"></script>
+    <script src="js/app.min.js?_v=20220218123546"></script>
 </div>
 </body>
 </html>

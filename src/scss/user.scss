@@ -1,0 +1,141 @@
+.user {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+  @include laptop-S{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .user_photo {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    border: 1px solid #dddddd;
+    border-radius: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    @include laptop-S{
+      margin-bottom: 20px;
+    }
+  }
+
+  .user_info {
+    width: calc(100% - 350px);
+    background-color: #eeeeee;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+    //justify-content: space-between;
+    @include laptop-S{
+      max-width: 600px;
+      width: 100%;
+    }
+    .user_fio {
+      margin: 30px;
+      border-bottom: 1.5px solid #4c4c4c;
+      padding-bottom: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include laptop-M{
+        flex-wrap: wrap;
+      }
+      .user_name {
+        font-size: 35px;
+        font-weight: 500;
+      }
+
+      .user_settings {
+        display: flex;
+
+        .setting {
+          margin: 0 10px;
+        }
+      }
+    }
+
+    .user_full_info {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 30px;
+      height: 100%;
+      @include laptop-M{
+        flex-wrap: wrap;
+        //align-items: center;
+        justify-content: center;
+      }
+      .user_statistic {
+        max-width: 390px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 23px;
+        font-weight: 500;
+
+        .user_block {
+          display: flex;
+          justify-content: space-between;
+          margin: 10px 0;
+
+          .name_courses {
+            div {
+              text-align: right;
+            }
+          }
+        }
+
+        &.duo {
+          flex-direction: column;
+          justify-content: flex-start;
+          @include laptop-M{
+            height: 0%;
+          }
+        }
+
+        &.byn {
+          justify-content: space-between;
+          flex-direction: column;
+          height: 100%;
+          @include laptop-M{
+            height: 0%;
+          }
+          .user_block {
+            justify-content: flex-end;
+          }
+
+          .balance {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+
+    .user_logout {
+      margin: 0 0 20px 0;
+      text-align: right;
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      img{
+        width: 24px;
+        margin-right: 5px;
+      }
+      a {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.user_dashboard {
+  position: relative;
+  height: 300px;
+  background-color: #eeeeee;
+  border-radius: 15px;
+  width: 100%;
+  margin: 30px 0;
+}

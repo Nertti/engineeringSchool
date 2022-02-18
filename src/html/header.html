@@ -1,5 +1,5 @@
 <header>
-    <div class="nav">
+    <div class="nav lock-padding">
         <div class="container">
             <div class="nav__head">
                 <div class="logo">
@@ -25,7 +25,7 @@
 <!--                            <?php endif; ?>-->
 <!--                        </li>-->
 <!--                        <?php else: ?>-->
-                        <li><a href="/">Войти</a></li>
+                        <li><a class="popup-link" href="#popup_log">Войти</a></li>
 <!--                        <?php endif; ?>-->
                     </ul>
                 </div>
@@ -33,3 +33,63 @@
         </div>
     </div>
 </header>
+<div id="popup_log" class="popup">
+    <div class="popup_body">
+        <div class="popup_content" style="background-image: url('img/back_log.png')">
+            <a href="#" class="popup_close"></a>
+            <div class="log">
+                <div class="block">
+                    <div class="form">
+                        <form action="">
+                            <label>
+                                Логин:
+                                <input type="text" name="log">
+                            </label>
+                            <br>
+                            <label>
+                                Пароль:
+                                <input type="password" name="pass">
+                            </label>
+                            <div class="button">
+                                Войти
+                            </div>
+                            <div onclick="location.href='log.html'" class="register">
+                                Зарегистрироваться
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="popup_reg" class="popup">
+    <div class="popup_body">
+        <div class="popup_content" style="background-image: url('img/back_log.png')">
+            <a href="#" class="popup_close"></a>
+            <div class="log">
+                <div class="block">
+                    <div class="form">
+                        <form action="">
+                            <label>
+                                Логин:
+                                <input type="text" name="log">
+                            </label>
+                            <br>
+                            <label>
+                                Пароль:
+                                <input type="password" name="pass">
+                            </label>
+                            <div class="button">
+                                Войти
+                            </div>
+                            <div onclick="location.href='log.html'" class="register">
+                                Зарегистрироваться
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

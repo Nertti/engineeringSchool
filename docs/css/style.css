@@ -367,7 +367,7 @@ body.lock {
   background-position: center center;
   background-color: #fff;
   color: #4c4c4c;
-  max-width: 800px;
+  max-width: 500px;
   padding: 25px;
   border-radius: 20px;
   position: relative;
@@ -382,6 +382,7 @@ body.lock {
   margin-left: auto;
   z-index: 3;
   width: 35px;
+  height: 25px;
 }
 
 .popup .popup_body .popup_content .popup_close::before,
@@ -392,7 +393,7 @@ body.lock {
   width: 100%;
   height: 3px;
   left: 0;
-  top: 0;
+  top: 10px;
   bottom: 0;
   right: 0;
   border-radius: 10px;
@@ -732,7 +733,7 @@ body.lock {
 .block .title_form {
   font-weight: 600;
   font-size: 30px;
-  padding: 30px;
+  padding: 30px 0 0;
   text-align: center;
 }
 
@@ -762,10 +763,15 @@ body.lock {
 }
 
 .block .form .register {
-  font-size: 18px;
   text-decoration: underline;
-  text-align: center;
-  cursor: pointer;
+}
+
+.block .form .register a {
+  font-weight: 500;
+}
+
+.block .form .register a:hover {
+  color: #4c4c4c;
 }
 
 #popup_log .log {
@@ -1094,171 +1100,84 @@ footer .footRow .links a:hover {
   margin: 0 auto;
 }
 
-.user {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 30px 0;
-}
-
-.user .user_photo {
+.user_img {
+  width: 120px;
+  height: 120px;
   position: relative;
-  height: 300px;
-  width: 300px;
-  border: 1px solid #dddddd;
-  border-radius: 15px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  background-color: #fff;
+  border-radius: 50%;
+  top: -60px;
+  margin: 0 auto;
+  border: 0.1px solid rgba(76, 76, 76, 0.3);
 }
 
-.user .user_info {
-  width: calc(100% - 350px);
-  background-color: #eeeeee;
-  border-radius: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  min-height: 300px;
+.user_img:hover .edit_img {
+  opacity: 100%;
+  color: #f0f0f0;
 }
 
-.user .user_info .user_fio {
-  margin: 30px;
-  border-bottom: 1.5px solid #4c4c4c;
-  padding-bottom: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.user .user_info .user_fio .user_name {
-  font-size: 35px;
-  font-weight: 500;
-}
-
-.user .user_info .user_fio .user_settings {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.user .user_info .user_fio .user_settings .setting {
-  margin: 0 10px;
-}
-
-.user .user_info .user_full_info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0 30px;
-  height: 100%;
-}
-
-.user .user_info .user_full_info .user_statistic {
-  max-width: 390px;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  font-size: 23px;
-  font-weight: 500;
-}
-
-.user .user_info .user_full_info .user_statistic .user_block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 10px 0;
-}
-
-.user .user_info .user_full_info .user_statistic .user_block .name_courses div {
-  text-align: right;
-}
-
-.user .user_info .user_full_info .user_statistic.duo {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.user .user_info .user_full_info .user_statistic.byn {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100%;
-}
-
-.user .user_info .user_full_info .user_statistic.byn .user_block {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.user .user_info .user_full_info .user_statistic.byn .balance {
-  margin-right: 5px;
-}
-
-.user .user_info .user_logout {
-  margin: 0 0 20px 0;
-  text-align: right;
-  line-height: 24px;
+.user_img .edit_img {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.user .user_info .user_logout img {
-  width: 24px;
-  margin-right: 5px;
-}
-
-.user .user_info .user_logout a {
-  font-size: 20px;
-}
-
-.user_dashboard {
-  position: relative;
-  height: 300px;
-  background-color: #eeeeee;
-  border-radius: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-transition: ease 0.8s;
+  -o-transition: ease 0.8s;
+  transition: ease 0.8s;
+  height: 100%;
   width: 100%;
-  margin: 30px 0;
+  line-height: 100%;
+  background-color: rgba(76, 76, 76, 0.3);
+  font-weight: normal;
+  color: #f0f0f0;
+}
+
+.user_name {
+  text-align: center;
+  position: relative;
+  top: -30px;
+}
+
+.user .title {
+  font-weight: 500;
+  font-size: 25px;
+  border-bottom: 1px solid #4c4c4c;
+  color: #4c4c4c;
+  margin-bottom: 10px;
+}
+
+.user .general_info_user {
+  width: 100%;
+  height: 300px;
+  background-color: #4c4c4c;
+  margin-bottom: 20px;
+}
+
+.user .timetable_user {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.user .timetable_user .msg {
+  font-size: 30px;
 }
 
 @media screen and (max-width: 1220px) {
@@ -1285,27 +1204,6 @@ footer .footRow .links a:hover {
   .our .lesson .txt_lesson {
     padding: 20px 0;
     width: 100%;
-  }
-
-  .user .user_info .user_fio {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-
-  .user .user_info .user_full_info {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-
-  .user .user_info .user_full_info .user_statistic.duo {
-    height: 0%;
-  }
-
-  .user .user_info .user_full_info .user_statistic.byn {
-    height: 0%;
   }
 }
 
@@ -1346,25 +1244,6 @@ footer .footRow .links a:hover {
   .contact_row .block_contact {
     width: 48%;
     margin: 20px 0;
-  }
-
-  .user {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-
-  .user .user_photo {
-    margin-bottom: 20px;
-  }
-
-  .user .user_info {
-    max-width: 600px;
-    width: 100%;
   }
 }
 

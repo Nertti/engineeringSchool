@@ -53,8 +53,8 @@
                             <div class="button">
                                 Войти
                             </div>
-                            <div onclick="location.href='log.html'" class="register">
-                                Зарегистрироваться
+                            <div class="register">
+                                <a class="popup-link" href="#popup_reg">Зарегистрироваться</a>
                             </div>
                         </form>
                     </div>
@@ -69,23 +69,37 @@
             <a href="#" class="popup_close"></a>
             <div class="log">
                 <div class="block">
+                    <div class="title_form">Регистрация</div>
                     <div class="form">
-                        <form action="">
+                        <form method="post" action="log.php">
+                            <label>
+                                Имя:
+                                <input type="text" name="name">
+                            </label>
+                            <label>
+                                Фамилия:
+                                <input type="text" name="surname">
+                            </label>
+                            <label>
+                                Отчество:
+                                <input type="text" name="last_name">
+                            </label>
                             <label>
                                 Логин:
-                                <input type="text" name="log">
+                                <input type="text" name="surname">
+                            </label>
+                            <label>
+                                Пароль:
+                                <input type="email" name="pass">
                             </label>
                             <br>
                             <label>
-                                Пароль:
-                                <input type="password" name="pass">
+                                Повторите пароль:
+                                <input type="password" name="check_pass">
                             </label>
-                            <div class="button">
-                                Войти
-                            </div>
-                            <div onclick="location.href='log.html'" class="register">
-                                Зарегистрироваться
-                            </div>
+                            <button type="submit" name="btn-log" class="button">
+                                зарегать
+                            </button>
                         </form>
                     </div>
                 </div>

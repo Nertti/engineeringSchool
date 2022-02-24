@@ -1148,17 +1148,58 @@ footer .footRow .links a:hover {
 
 .user .title {
   font-weight: 500;
-  font-size: 25px;
+  font-size: 22px;
   border-bottom: 1px solid #4c4c4c;
   color: #4c4c4c;
   margin-bottom: 10px;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.user .title span a {
+  font-size: 20px;
 }
 
 .user .general_info_user {
   width: 100%;
-  height: 300px;
-  background-color: #4c4c4c;
+  height: 200px;
   margin-bottom: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.user .general_info_user .info_block {
+  width: 150px;
+}
+
+.user .general_info_user .info_block .label {
+  font-size: 28px;
+  font-weight: normal;
+  margin: 20px 0;
+}
+
+.user .general_info_user .info_block .label:after {
+  content: ":";
+}
+
+.user .general_info_user .result_block {
+  width: 400px;
+}
+
+.user .general_info_user .result_block .label {
+  font-size: 28px;
+  font-weight: normal;
+  margin: 20px 0;
 }
 
 .user .timetable_user {
@@ -1204,6 +1245,13 @@ footer .footRow .links a:hover {
   .our .lesson .txt_lesson {
     padding: 20px 0;
     width: 100%;
+  }
+
+  .user .general_info_user {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 300px;
+    width: 600px;
   }
 }
 
@@ -1398,6 +1446,22 @@ footer .footRow .links a:hover {
   .contact_row .block_contact {
     width: 100%;
   }
+
+  .user .general_info_user .info_block {
+    width: 110px;
+  }
+
+  .user .general_info_user .info_block .label {
+    font-size: 22px;
+  }
+
+  .user .general_info_user .result_block {
+    width: calc(100% - 110px);
+  }
+
+  .user .general_info_user .result_block .label {
+    font-size: 22px;
+  }
 }
 
 @media screen and (max-width: 520px) {
@@ -1407,6 +1471,29 @@ footer .footRow .links a:hover {
 
   .nav .nav__head .mgt {
     display: none;
+  }
+
+  .user .title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .user .general_info_user .info_block {
+    width: 100px;
+  }
+
+  .user .general_info_user .info_block .label {
+    font-size: 18px;
+  }
+
+  .user .general_info_user .result_block {
+    width: calc(100% - 100px);
+  }
+
+  .user .general_info_user .result_block .label {
+    font-size: 18px;
   }
 }
 

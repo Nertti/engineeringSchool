@@ -35,16 +35,80 @@
 .user{
   .title{
     font-weight: 500;
-    font-size: 25px;
+    font-size: 22px;
     border-bottom: 1px solid #4c4c4c;
     color: #4c4c4c;
     margin-bottom: 10px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    span{
+      a{
+        font-size: 20px;
+      }
+    }
+    @include mobile-XL{
+      flex-direction: column;
+    }
   }
   .general_info_user{
+    @include laptop-M{
+      flex-wrap: wrap;
+      height: 300px;
+      width: 600px;
+    }
     width: 100%;
-    height: 300px;
-    background-color: #4c4c4c;
+    height: 200px;
+    //background-color: #4c4c4c;
+    //border: 1px solid saddlebrown;
     margin-bottom: 20px;
+    justify-content: space-between;
+    //
+    padding: 0 20px;
+    display: flex;
+    .info_block{
+      width: 150px;
+      @include tablet-S{
+        width: 110px;
+      }
+      @include mobile-XL{
+        width: 100px;
+      }
+      .label{
+        font-size: 28px;
+        font-weight: normal;
+        margin: 20px 0;
+        &:after{
+          content: ':';
+        }
+        @include tablet-S{
+          font-size: 22px;
+        }
+        @include mobile-XL{
+          font-size: 18px;
+        }
+      }
+    }
+    .result_block{
+      width: 400px;
+      @include tablet-S{
+        width: calc(100% - 110px);
+      }
+      @include mobile-XL{
+        width: calc(100% - 100px);
+      }
+      .label{
+        font-size: 28px;
+        font-weight: normal;
+        margin: 20px 0;
+        @include tablet-S{
+          font-size: 22px;
+        }
+        @include mobile-XL{
+          font-size: 18px;
+        }
+      }
+    }
   }
   .timetable_user{
     width: 100%;

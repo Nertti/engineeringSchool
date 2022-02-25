@@ -26,20 +26,28 @@
         </div>
         <div class="container">
             <div class="user">
-                <div class="title"><span>Общая информация</span><span><a href="#">Изменить</a>   <a href="#">Выйти</a></span></div>
+                <div class="title">
+                    <span>Общая информация</span>
+                    <span><a class="popup-link" href="#popup_edit_info">Изменить</a><a href="#">Выйти</a></span></div>
                 <div class="general_info_user">
                     <div class="info_block">
                         <div class="label">Почта</div>
                         <div class="label">Группы</div>
                     </div>
                     <div class="result_block">
-                    <div class="label">
-                        dnerertin01@gmail.com
+                        <div class="label">
+                            dnerertin01@gmail.com
+                        </div>
+                        <div class="label">
+                            Программирование Т-917
+                        </div>
+                        <div class="label">
+                            Графика Г-857
+                        </div>
+                        <!--                        <div class="label">-->
+                        <!--                            Конструирование К-120-->
+                        <!--                        </div>-->
                     </div>
-                    <div class="label">
-                        Программирование Т-917
-                    </div>
-                </div>
                     <div class="info_block">
                         <div class="label">Логин</div>
                         <div class="label">Телефон</div>
@@ -59,18 +67,53 @@
                 </div>
                 <div class="title">Расписание</div>
                 <div class="timetable_user">
-<!--                    <span class="msg">Вы не записаны ни на один курс</span>-->
+                    <!--                    <span class="msg">Вы не записаны ни на один курс</span>-->
                     <span class="msg">Ещё в разработке :)</span>
                 </div>
             </div>
         </div>
     </main>
     @@include('html/footer.html')
-    <div id="popup" class="popup">
+    <div id="popup_edit_info" class="popup">
         <div class="popup_body">
             <div class="popup_content">
                 <a href="#" class="popup_close"></a>
-                <div>Некое наполнение пока хз</div>
+                <div class="edit_user_info">
+                    <!--                    <div class="title_edit_info">-->
+                    <!--                        Настройки-->
+                    <!--                    </div>-->
+                    <div class="body_edit_info">
+                        <form method="post" action="">
+                            <label>
+                                Имя:
+                                <input type="text" name="name">
+                            </label>
+                            <label>
+                                Фамилия:
+                                <input type="text" name="surname">
+                            </label>
+                            <label>
+                                Отчество:
+                                <input type="text" name="last_name">
+                            </label>
+                            <label>
+                                Логин:
+                                <input type="text" name="surname">
+                            </label>
+                            <label>
+                                Почта:
+                                <input type="text" name="surname">
+                            </label>
+                            <label>
+                                Телефон:
+                                <input type="text" name="surname">
+                            </label>
+                            <button type="submit" name="btn-save-user" class="button">
+                                Сохранить
+                            </button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

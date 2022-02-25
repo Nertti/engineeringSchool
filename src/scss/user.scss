@@ -43,18 +43,31 @@
     display: flex;
     justify-content: space-between;
     span{
+      display: flex;
+      width: 250px;
+      justify-content: space-between;
+      @include tablet-S{
+        text-align: center;
+        width: 100%;
+      }
       a{
         font-size: 20px;
+        display: flex;
+        align-items: center;
+        img{
+          width: 25px;
+          height: 25px;
+        }
       }
     }
-    @include mobile-XL{
+    @include tablet-S{
       flex-direction: column;
     }
   }
   .general_info_user{
     @include laptop-M{
       flex-wrap: wrap;
-      height: 300px;
+      height: 400px;
       width: 600px;
     }
     width: 100%;
@@ -76,7 +89,7 @@
       }
       .label{
         font-size: 28px;
-        font-weight: normal;
+        font-weight: 500;
         margin: 20px 0;
         &:after{
           content: ':';
@@ -120,6 +133,31 @@
     justify-content: center;
     .msg{
       font-size: 30px;
+    }
+  }
+}
+.edit_user_info{
+  margin: 20px 0 0;
+  font-size: 25px;
+  .body_edit_info{
+    label{
+      font-size: 25px;
+      font-weight: 500;
+      display: flex;
+      justify-content: space-between;
+    }
+    input{
+      font-size: 25px;
+      line-height: 30px;
+      width: 300px;
+      border-radius: 5px;
+      border: 1px solid #4c4c4c;
+      padding:5px 5px 5px 10px;
+      margin-bottom: 10px;
+      margin-left: 10px;
+    }
+    button{
+      margin: 10px auto 0;
     }
   }
 }

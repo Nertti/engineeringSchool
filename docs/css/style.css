@@ -1261,7 +1261,8 @@ footer .footRow .links a:hover {
 .edit_user_info .body_edit_info input {
   font-size: 25px;
   line-height: 30px;
-  width: 300px;
+  max-width: 300px;
+  width: 100%;
   border-radius: 5px;
   border: 1px solid #4c4c4c;
   padding: 5px 5px 5px 10px;

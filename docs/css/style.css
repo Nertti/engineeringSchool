@@ -211,6 +211,15 @@ button {
   color: #e09447;
 }
 
+.error_msg {
+  color: #f1453d;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  left: 0;
+  font-weight: 500;
+}
+
 .nav {
   position: fixed;
   z-index: 10;
@@ -839,267 +848,6 @@ footer .footRow .links a:hover {
   color: #5788e3;
 }
 
-.admin_panel {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 25px 0 22px;
-}
-
-.admin_panel .section-general {
-  max-width: 300px;
-  min-height: 800px;
-  width: 100%;
-  border-radius: 20px;
-  -webkit-box-shadow: 0 0 20px #dbdbdb;
-          box-shadow: 0 0 20px #dbdbdb;
-}
-
-.admin_panel .section-general ul {
-  width: 100%;
-  padding: 20px 0;
-}
-
-.admin_panel .section-general ul li {
-  margin: 20px auto;
-  text-align: center;
-}
-
-.admin_panel .section-general ul li a {
-  font-size: 20px;
-}
-
-.admin_panel .section-second {
-  width: calc(100% - 320px);
-}
-
-.admin_panel .section-second .nav_admin {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.admin_panel .section-second .nav_admin div {
-  margin: 0 0 0 20px;
-}
-
-.admin_panel .section-second .table {
-  margin: 20px auto;
-  width: calc(100% - 40px);
-}
-
-.admin_panel .section-second .table .find {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 40px;
-  width: 300px;
-  margin: 20px 0;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.admin_panel .section-second .table .find button {
-  background-color: #fff;
-  margin: 0 10px;
-}
-
-.admin_panel .section-second .table .find label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.admin_panel .section-second .table .find label span,
-.admin_panel .section-second .table .find label input {
-  width: 200px;
-  font-size: 22px;
-  height: 30px;
-}
-
-.admin_panel .section-second .table .find label input {
-  border: 1px solid #4c4c4c;
-  border-radius: 5px;
-  margin-right: 10px;
-}
-
-.admin_panel .section-second .table .title {
-  text-align: center;
-}
-
-.admin_panel .section-second .table .head_table {
-  font-weight: 600;
-  font-size: 20px;
-}
-
-.admin_panel .section-second .table .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  border-bottom: 1px solid #4c4c4c;
-  margin: 5px;
-}
-
-.admin_panel .section-second .table .row .id {
-  width: 40px;
-}
-
-.admin_panel .section-second .table .row .name {
-  width: 200px;
-}
-
-.admin_panel .section-second .table .row .surname {
-  width: 200px;
-}
-
-.admin_panel .section-second .table .row .price {
-  width: 70px;
-  text-align: center;
-}
-
-.admin_panel .section-second .table .row .tel {
-  width: 150px;
-}
-
-.admin_panel .section-second .table .row .role {
-  width: 70px;
-}
-
-.admin_panel .section-second .table .row .course {
-  width: 180px;
-}
-
-.admin_panel .section-second .table .row .edit {
-  width: 100px;
-}
-
-.admin_panel .section-second .table .row .edit a {
-  font-weight: 500;
-}
-
-.admin_panel .section-second .table .row .edit a:hover {
-  color: #d9b91b;
-}
-
-.admin_panel .section-second .table .row .delete {
-  width: 80px;
-  margin-right: 15px;
-}
-
-.admin_panel .section-second .table .row .delete a {
-  font-weight: 500;
-}
-
-.admin_panel .section-second .table .row .delete a:hover {
-  color: #c75454;
-}
-
-.admin_panel .section-second .table .row .control {
-  width: 280px;
-  margin-right: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.admin_panel .section-second .table .row .column {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.admin_panel .section-second .table .row .column div {
-  margin: 0 15px 0 0;
-}
-
-.create {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 30px auto;
-}
-
-.create .title {
-  text-align: center;
-}
-
-.create .error_msg {
-  line-height: 20px;
-  height: 20px;
-  text-align: center;
-  padding: 20px;
-  color: #c75454;
-  font-weight: bolder;
-}
-
-.create label,
-.create .select {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 400px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0 auto;
-}
-
-.create label span,
-.create .select span {
-  font-size: 22px;
-  font-weight: 500;
-}
-
-.create label input,
-.create label select,
-.create .select input,
-.create .select select {
-  margin: 20px 0 20px 0;
-  border: 1px solid #4c4c4c;
-  border-radius: 5px;
-  height: 30px;
-  width: 200px;
-  font-size: 20px;
-}
-
-.create label select,
-.create .select select {
-  font-size: 18px;
-}
-
-.create .button {
-  margin: 0 auto;
-}
-
 .user_img {
   width: 120px;
   height: 120px;
@@ -1272,6 +1020,89 @@ footer .footRow .links a:hover {
 
 .edit_user_info .body_edit_info button {
   margin: 10px auto 0;
+}
+
+.admin {
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.admin .admin_info {
+  width: 100%;
+  padding: 10px;
+}
+
+.admin .admin_info div {
+  padding: 0 20px;
+  font-size: 30px;
+  margin: 0 0 25px;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.admin .admin_info .title_info_admin {
+  border-bottom: 1px solid #4c4c4c;
+  color: #4c4c4c;
+  font-size: 22px;
+}
+
+.admin .admin_panel {
+  margin: 10px auto;
+  max-width: 1100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1px;
+}
+
+.admin .admin_panel .menu_block {
+  max-width: 330px;
+  width: 100%;
+  padding: 50px 0;
+  background-color: #efefef;
+  text-align: center;
+  font-weight: 500;
+  font-size: 25px;
+  margin: 5px 5px 20px;
+}
+
+.admin .admin_panel .menu_block:hover {
+  margin: 0 0 15px;
+  max-width: 340px;
+  padding: 55px 0;
+  -webkit-box-shadow: 0 0 20px rgba(97, 142, 227, 0.2);
+          box-shadow: 0 0 20px rgba(97, 142, 227, 0.2);
+}
+
+.admin .admin_panel .menu_block:focus {
+  margin: 10px 10px 25px;
+  max-width: 320px;
+  padding: 45px 0;
+  background-color: #d7d7d7;
+  color: #4c4c4c;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 @media screen and (max-width: 1220px) {

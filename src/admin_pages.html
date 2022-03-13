@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title": "Администратор"
+})
+<body>
+<div class="wrapper">
+    @@include('html/header.html')
+    <main class="main">
+        <div class="container">
+            <div class="admin_pages">
+                <div class="admin_panel">
+                    <a class="menu_block active" href="#">Учащиеся</a>
+                    <a class="menu_block" href="#">Преподаватели</a>
+                    <a class="menu_block" href="#">Курсы</a>
+                    <a class="menu_block" href="#">Группы</a>
+                    <a class="menu_block" href="#">Расписание</a>
+                    <a class="menu_block" href="#">Оплата</a>
+                    <!--                    <a class="menu_block" href="#">1</a>-->
+                    <!--                    <a class="menu_block" href="#">2</a>-->
+                    <!--                    <a class="menu_block" href="#">3</a>-->
+                </div>
+                <div class="admin_table">
+                    <div class="admin_menu">
+                        <a href="#">Создать</a>
+                        <a href="#">Выйти</a>
+                    </div>
+                    <div class="title_menu">
+                        <a class="menu_block active" href="#">Учащиеся</a>
+                        <a class="menu_block" href="#">Преподаватели</a>
+                        <a class="menu_block" href="#">Курсы</a>
+                        <a class="menu_block" href="#">Группы</a>
+                        <a class="menu_block" href="#">Расписание</a>
+                        <a class="menu_block" href="#">Оплата</a>
+                    </div>
+                    <div class="title">Учащиеся</div>
+                    <div class="search_menu">
+                        <label>
+                            Поиск по фамилии:
+                            <input class="search" type="text" name="search">
+                        </label>
+                        <button>Найти</button>
+                        <a href="#">Сбросить</a>
+                    </div>
+                    <div class="head_table">
+                        <a class="number" href="#">№</a>
+                        <a class="surname" href="#">Фамилия И.О.</a>
+                        <a class="balance" href="#">Баланс</a>
+                        <span class="control">Управление</span>
+                    </div>
+                    <div class="table">
+                        <div class="row_table">
+                            <span class="number">1</span>
+                            <span class="surname">NERETIN</span>
+                            <span class="balance">0 BYN</span>
+                            <span class="control">
+                                <a class="edit" href="#">Изменить</a>
+                                <a class="delete" href="#">Удалить</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    @@include('html/footer.html')
+    <script src="js/app.min.js"></script>
+</div>
+</body>
+</html>

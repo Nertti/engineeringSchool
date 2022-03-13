@@ -23,8 +23,9 @@
   width: 100%;
   margin: 0 auto;
   color: #4c4c4c;
+  height: 100%;
   @include laptop-M{
-    max-width: calc(100% - 60px);
+    max-width: calc(100% - 50px);
   }
   @include mobile-M{
     max-width: calc(100% - 40px);
@@ -33,6 +34,8 @@
 
 main{
   padding: 60px 0 0;
+  height: 100%;
+  flex-grow: 1;
 }
 a{
   text-decoration: none;
@@ -60,6 +63,10 @@ a{
 }
 button{
   display: block;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+
 }
 .title{
   font-size: 35px;
@@ -92,3 +99,6 @@ button{
 
 @import "user.scss";
 @import "admin.scss";
+@import "admin_pages.scss";
+@import "admin_pages_create.scss";
+

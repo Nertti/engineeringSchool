@@ -1,0 +1,52 @@
+.admin_pages_create{
+  height: 100%;
+  margin-top: 50px;
+  .title{
+    text-align: center;
+    margin: 20px 0;
+  }
+  .create_block_student{
+    display: flex;
+    justify-content: space-between;
+    div{
+      font-size: 30px;
+      line-height: 35px;
+      max-width: 550px;
+      width: 100%;
+      label{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      input{
+        font-size: 30px;
+        line-height: 35px;
+        border: 1px solid #4c4c4c;
+        margin: 20px 0;
+        border-radius: 5px;
+        max-width: 350px;
+        width: 100%;
+        padding: 1px 10px;
+      }
+    }
+    .fio{
+      display: flex;
+      flex-direction: column;
+    }
+    .login {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .control_buts{
+    display: flex;
+    justify-content: center;
+    button{
+      margin: 5px 50px;
+      border-radius: 10px;
+      &.reset{
+        background-color: #999;
+      }
+    }
+  }
+}

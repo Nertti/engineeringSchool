@@ -153,10 +153,15 @@ h6 {
   width: 100%;
   margin: 0 auto;
   color: #4c4c4c;
+  height: 100%;
 }
 
 main {
   padding: 60px 0 0;
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 a {
@@ -190,6 +195,11 @@ a:hover {
 
 button {
   display: block;
+  background-color: white;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
 .title {
@@ -795,7 +805,7 @@ body.lock {
 }
 
 footer {
-  padding: 50px 0;
+  padding: 20px 0;
   background-color: #4c4c4c;
   color: #f0f0f0;
   margin-top: auto;
@@ -803,49 +813,9 @@ footer {
   text-align: center;
 }
 
-footer a {
-  color: #f0f0f0;
-  font-weight: normal;
-}
-
-footer .footRow {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  color: #f0f0f0;
-}
-
-footer .footRow div {
-  max-width: 300px;
-  width: 100%;
-  text-align: left;
-}
-
-footer .footRow .title_foot {
-  font-size: 25px;
-  font-weight: 500;
-  margin: 20px 0;
-}
-
-footer .footRow .links.course a:before {
-  content: " ";
-  padding: 0;
-}
-
-footer .footRow .links a {
-  color: #f0f0f0;
+footer span {
+  font-size: 18px;
   font-weight: 400;
-}
-
-footer .footRow .links a:before {
-  content: "⇒";
-  padding-right: 5px;
-}
-
-footer .footRow .links a:hover {
-  color: #5788e3;
 }
 
 .user_img {
@@ -1060,6 +1030,14 @@ footer .footRow .links a:hover {
   font-size: 22px;
 }
 
+.admin .admin_info .title_info_admin * {
+  font-size: 22px;
+}
+
+.admin .admin_info .title_info_admin span {
+  margin-right: 5px;
+}
+
 .admin .admin_panel {
   margin: 10px auto;
   max-width: 1100px;
@@ -1105,9 +1083,296 @@ footer .footRow .links a:hover {
   transition: all 0.3s ease 0s;
 }
 
+.admin_pages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 30px 0;
+  max-height: 750px;
+}
+
+.admin_pages .admin_panel {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px #b8b8b8;
+          box-shadow: 0 0 10px #b8b8b8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 0;
+  min-height: 700px;
+}
+
+.admin_pages .admin_panel * {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.admin_pages .admin_panel *.active {
+  color: #d9b91b;
+}
+
+.admin_pages .admin_panel *.active:hover {
+  color: #4c4c4c;
+}
+
+.admin_pages .admin_table {
+  max-width: calc(100% - 350px);
+  width: 100%;
+  max-height: 800px;
+}
+
+.admin_pages .admin_table .admin_menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.admin_pages .admin_table .admin_menu * {
+  margin: 0 0 0 20px;
+}
+
+.admin_pages .admin_table .title_menu {
+  padding: 20px 0;
+  border-bottom: 1px solid #4c4c4c;
+  border-top: 1px solid #4c4c4c;
+  display: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 20px auto;
+}
+
+.admin_pages .admin_table .title_menu * {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.admin_pages .admin_table .title_menu *.active {
+  color: #d9b91b;
+}
+
+.admin_pages .admin_table .title_menu *.active:hover {
+  color: #4c4c4c;
+}
+
+.admin_pages .admin_table .title {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.admin_pages .admin_table .search_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.admin_pages .admin_table .search_menu * {
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 25px;
+  margin: 0 0 0 10px;
+}
+
+.admin_pages .admin_table .search_menu button:hover {
+  color: #5788e3;
+}
+
+.admin_pages .admin_table .search_menu .search {
+  border-radius: 5px;
+  border: 1px solid #4c4c4c;
+  padding: 0 10px;
+  line-height: 30px;
+}
+
+.admin_pages .admin_table .head_table {
+  border-bottom: 1px solid #4c4c4c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 15px 0 0;
+}
+
+.admin_pages .admin_table .head_table * {
+  font-weight: 500;
+  line-height: 35px;
+  font-size: 22px;
+}
+
+.admin_pages .admin_table .number {
+  width: 50px;
+  text-align: center;
+}
+
+.admin_pages .admin_table .surname {
+  width: 300px;
+}
+
+.admin_pages .admin_table .balance {
+  width: 110px;
+  text-align: center;
+}
+
+.admin_pages .admin_table .price {
+  max-width: 150px;
+  text-align: center;
+  width: 100%;
+}
+
+.admin_pages .admin_table .control {
+  width: calc(100% - 450px);
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.admin_pages .admin_table .control .edit:hover {
+  color: #d9b91b;
+}
+
+.admin_pages .admin_table .control .delete:hover {
+  color: #c75454;
+}
+
+.admin_pages .admin_table .table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-y: scroll;
+  height: 500px;
+}
+
+.admin_pages .admin_table .table::-webkit-scrollbar {
+  background-color: #ffffff;
+}
+
+.admin_pages .admin_table .table div {
+  border-bottom: 1px solid #4c4c4c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.admin_pages .admin_table .table div * {
+  line-height: 35px;
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.admin_pages_create {
+  height: 100%;
+  margin-top: 50px;
+}
+
+.admin_pages_create .title {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.admin_pages_create .create_block_student {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.admin_pages_create .create_block_student div {
+  font-size: 30px;
+  line-height: 35px;
+  max-width: 550px;
+  width: 100%;
+}
+
+.admin_pages_create .create_block_student div label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.admin_pages_create .create_block_student div input {
+  font-size: 30px;
+  line-height: 35px;
+  border: 1px solid #4c4c4c;
+  margin: 20px 0;
+  border-radius: 5px;
+  max-width: 350px;
+  width: 100%;
+  padding: 1px 10px;
+}
+
+.admin_pages_create .create_block_student .fio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.admin_pages_create .create_block_student .login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.admin_pages_create .control_buts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.admin_pages_create .control_buts button {
+  margin: 5px 50px;
+  border-radius: 10px;
+}
+
+.admin_pages_create .control_buts button.reset {
+  background-color: #999;
+}
+
 @media screen and (max-width: 1220px) {
   .container {
-    max-width: calc(100% - 60px);
+    max-width: calc(100% - 50px);
   }
 
   .our .lesson {
@@ -1137,6 +1402,29 @@ footer .footRow .links a:hover {
     height: 400px;
     width: 600px;
   }
+
+  .admin_pages .admin_panel {
+    display: none;
+  }
+
+  .admin_pages .admin_table {
+    max-width: 850px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 0 auto;
+    padding: 50px 0 0 0;
+  }
+
+  .admin_pages .admin_table .title_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .admin_pages .admin_table .title {
+    font-size: 25px;
+  }
 }
 
 @media screen and (max-width: 1077px) {
@@ -1152,6 +1440,10 @@ footer .footRow .links a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+
+  .admin .admin_panel {
+    max-width: 700px;
   }
 }
 
@@ -1300,18 +1592,8 @@ footer .footRow .links a:hover {
     max-width: 100%;
   }
 
-  footer .footRow div {
-    text-align: center;
-  }
-
-  footer .footRow {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .admin .admin_panel {
+    max-width: 330px;
   }
 }
 
@@ -1357,6 +1639,11 @@ footer .footRow .links a:hover {
 
   .user .general_info_user .result_block .label {
     font-size: 22px;
+  }
+
+  .admin .admin_info div {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 

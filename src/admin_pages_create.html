@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title": "Администратор"
+})
+<body>
+<div class="wrapper">
+    @@include('html/header.html')
+    <main class="main">
+        <div class="container">
+            <div class="admin_pages_create">
+                <div class="title">Добавление учащегося</div>
+                <div class="create_block_student">
+                    <div class="fio">
+                        <label>
+                            Имя:
+                            <input type="text" name="name">
+                        </label>
+                        <label>
+                            Фамилия:
+                            <input type="text" name="surname">
+                        </label>
+                        <label>
+                            Отчество:
+                            <input type="text" name="last_name">
+                        </label>
+                    </div>
+                    <div class="login">
+                        <label>
+                            Логин:
+                            <input type="text" name="login">
+                        </label>
+                        <label>
+                            Пароль:
+                            <input type="password" name="pass">
+                        </label>
+                    </div>
+                </div>
+                <div class="control_buts">
+                    <button class="button" type="submit">Добавить</button>
+                    <button class="button reset" type="button">Отмена</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    @@include('html/footer.html')
+    <script src="js/app.min.js"></script>
+</div>
+</body>
+</html>

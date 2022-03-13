@@ -3,5 +3,5 @@ export function justFunc() {
         if (elem.innerText === 'Отсутствует' || elem.innerText === 'Отсутствуют' || elem.innerText === '0'){
             elem.style.color = 'red';
         }
-    })
+    });
 }

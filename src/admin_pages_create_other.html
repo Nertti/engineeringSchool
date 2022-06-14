@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title": "Администратор"
+})
+<body>
+<div class="wrapper">
+    @@include('html/header.html')
+    <main class="main">
+        <form class="admin_pages_create">
+            <div class="title">Добавление/Удаление учащихся</div>
+            <div class="add_stud_in_group">
+                <div class="admin_table">
+                    <div class="title">Учащиеся</div>
+                    <div class="search_menu">
+                        <label>
+                            Поиск по фамилии:
+                            <input class="search" type="text" name="search">
+                        </label>
+                        <button>Найти</button>
+                        <a href="#">Сбросить</a>
+                    </div>
+                    <div class="head_table">
+                        <a class="number" href="#">№</a>
+                        <a class="surname" href="#">Фамилия И.О.</a>
+                        <span class="control">Управление</span>
+                    </div>
+                    <div class="table">
+                        <div class="row_table">
+                            <span class="number">1</span>
+                            <span class="surname">NERETIN</span>
+                            <span class="control">
+                                <a class="delete" href="#">Удалить</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="admin_table">
+                    <div class="title">Учащиеся</div>
+                    <div class="search_menu">
+                        <label>
+                            Поиск по фамилии:
+                            <input class="search" type="text" name="search">
+                        </label>
+                        <button>Найти</button>
+                        <a href="#">Сбросить</a>
+                    </div>
+                    <div class="head_table">
+                        <a class="number" href="#">№</a>
+                        <a class="surname" href="#">Фамилия И.О.</a>
+                        <span class="control">Управление</span>
+                    </div>
+                    <div class="table">
+                        <div class="row_table">
+                            <span class="number">1</span>
+                            <span class="surname">NERETIN</span>
+                            <span class="control">
+                                <a class="add" href="#">Добавить</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </main>
+    @@include('html/footer.html')
+    <script src="js/app.min.js"></script>
+</div>
+</body>
+</html>

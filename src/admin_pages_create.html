@@ -10,34 +10,32 @@
         <div class="container">
             <div class="admin_pages_create">
                 <div class="title">Добавление учащегося</div>
-                <div class="create_block_student">
+                <form class="create_block_student" action="">
                     <div class="fio">
                         <label>
-                            Имя:
+                            Номер:
                             <input type="text" name="name">
-                        </label>
-                        <label>
-                            Фамилия:
-                            <input type="text" name="surname">
-                        </label>
-                        <label>
-                            Отчество:
-                            <input type="text" name="last_name">
                         </label>
                     </div>
                     <div class="login">
                         <label>
-                            Логин:
-                            <input type="text" name="login">
+                            Курс:
+                            <input type="text" name="surname">
                         </label>
                         <label>
-                            Пароль:
-                            <input type="password" name="pass">
+                            Преподаватель:
+                            <input type="text" name="last_name">
+                        </label>
+                        <label>
+                            <select name="id_cours">
+                                <option value=""></option>
+                            </select>
                         </label>
                     </div>
-                </div>
+                </form>
                 <div class="control_buts">
                     <button class="button" type="submit">Добавить</button>
+                    <button class="button reset" type="reset">Очистить</button>
                     <button class="button reset" type="button">Отмена</button>
                 </div>
             </div>

@@ -1,0 +1,16 @@
+.block_spravka{
+  width: 800px;
+  margin: 0 auto;
+  .title{
+    text-align: center;
+    margin: 10px 0;
+  }
+  .title_block_spravk{
+    border-bottom: 1px solid #4c4c4c;
+    margin: 20px 0;
+    font-size: 22px;
+  }
+  .spravk{
+    text-align: justify;
+  }
+}

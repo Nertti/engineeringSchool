@@ -23,7 +23,7 @@
   width: 100%;
   margin: 0 auto;
   color: #4c4c4c;
-  height: 100%;
+  height: auto;
   @include laptop-M{
     max-width: calc(100% - 50px);
   }
@@ -101,4 +101,6 @@ button{
 @import "admin.scss";
 @import "admin_pages.scss";
 @import "admin_pages_create.scss";
+@import "SPRAVKA.scss";
+@import "info_page.scss";
 
